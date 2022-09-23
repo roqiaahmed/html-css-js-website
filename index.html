@@ -42,47 +42,57 @@
         <button class="reset-options">Reset Options</button>
     </div>
 
-    <div class="nav-bullets">
-        <div class="bullet" data-section=".about-us">
-            <div class="tooltip" >about us</div>
-        </div>
-        <div class="bullet" data-section=".skills">
-            <div class="tooltip" >our skills</div>
-        </div>
-        <div class="bullet" data-section=".gellary">
-            <div class="tooltip" >our gellary</div>
-        </div>
-        <div class="bullet" data-section=".timeline">
-            <div class="tooltip" >timeline</div>
-        </div>
-        <div class="bullet" data-section=".features">
-            <div class="tooltip" >features</div>
-        </div>
-        <div class="bullet" data-section=".testimonials">
-            <div class="tooltip" >testimonials</div>
+    <div class="nav-bullets"> 
+        <div class="container">
+            <div class="bullet active" data-section=".about-us">
+                <div class="tooltip" >about us</div>
+            </div>
+            <div class="bullet" data-section=".skills">
+                <div class="tooltip" >our skills</div>
+            </div>
+            <div class="bullet" data-section=".gellary">
+                <div class="tooltip" >our gellary</div>
+            </div>
+            <div class="bullet" data-section=".timeline">
+                <div class="tooltip" >timeline</div>
+            </div>
+            <div class="bullet" data-section=".features">
+                <div class="tooltip" >features</div>
+            </div>
+            <div class="bullet" data-section=".testimonials">
+                <div class="tooltip" >testimonials</div>
+            </div>
         </div>
     </div>
     <div class="landing-page">
-        <div class="overlay"></div>
+        <div class="container">
+            <div class="overlay"></div>
+                <div class="header">
+                    <div class="logo">special design</div>
+                    <div class="list-container">
+                        <ul class="links">
+                            <li ><a class="active" href="#" >home</a> </li>
+                            <li><a href="#" data-section=".about-us">about</a> </li>
+                            <li><a href="#" data-section=".skills">skills</a> </li>
+                            <li><a href="#" data-section=".gellary">gellary</a> </li>
+                            <li><a href="#" data-section=".timeline">timeline</a> </li>
+                            <li><a href="#" data-section=".features">features</a> </li>
+                            <li><a href="#" data-section=".testimonials">testimonials</a> </li>
+                        </ul>
+                        <button class="toggel-menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
 
-            <div class="header">
-                <div class="logo">special design</div>
-                <ul class="links">
-                    <li ><a class="active" href="#" >home</a> </li>
-                    <li><a href="#" data-section=".about-us">about</a> </li>
-                    <li><a href="#" data-section=".skills">skills</a> </li>
-                    <li><a href="#" data-section=".gellary">gellary</a> </li>
-                    <li><a href="#" data-section=".timeline">timeline</a> </li>
-                    <li><a href="#" data-section=".features">features</a> </li>
-                    <li><a href="#" data-section=".testimonials">testimonials</a> </li>
-                </ul>
+            <div class="intro-text">
+                <h1> we are <span> creative </span> agency </h1>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                </p>
             </div>
-
-        <div class="intro-text">
-            <h1> we are <span> creative </span> agency </h1>
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            </p>
         </div>
     </div>
     <div class="container">
@@ -144,12 +154,17 @@
                 <img src="imgs/pic1.jpg" alt="pic1">
                 <img src="imgs/pic8.jpg" alt="pic2">
                 <img src="imgs/pic2.jpg" alt="pic13">
-                <img src="imgs/pic3.jpg" alt="pic4">
+                <img class="active" src="imgs/pic3.jpg" alt="pic4">
                 <img src="imgs/pic4.jpg" alt="pic5">
                 <img src="imgs/pic5.jpg" alt="">
                 <img src="imgs/pic6.jpg" alt="">
                 <img src="imgs/pic7.jpg" alt="">
+                <div class="slider-controls">
+                    <span id="prev" class="prev">Previous</span>
+                    <span id="next" class="next">Next</span>
+                </div>
             </div>
+    
         </div>
     </div>
     <div class="timeline">
@@ -272,6 +287,7 @@
             </form>
         </div>
     </div>
+    <div class="footer">Created by Roqia 2022</div>
     <script src="js/master.js"></script>
 </body>
 </html>
